@@ -14,7 +14,7 @@ $(() => {
   menuTrigger = $(".global__menu-overlay-trigger");
 
   // Loader
-  loaderCount(0, 22, 24, 26, 51, 52, 75, 86, true);
+  loaderCount(86, true);
 
   barba.hooks.before((data) => {
     headerWrapper.addClass("is-visible");
