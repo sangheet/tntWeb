@@ -3338,11 +3338,11 @@ body .global__wrapper::after { content: ''; position: absolute; height: 100%; wi
 
 body[data-theme="night"] { background: #1d0033;  color: #a126d4 !important; }
 
-body[data-theme="night"] [data-nmb] { background: #1d0033 !important; color: #a126d4 !important; }
+body[data-theme="night"] [data-nmb] {  color: #c5b7cc !important; background-image: url("./img/backtnt.jpg"); background-size: cover;}
 
-body[data-theme="night"] [data-nmb-lighten] { background: #030040 !important; color: #a126d4 !important; }
+body[data-theme="night"] [data-nmb-lighten] { background: #030040 !important; color: #c5b7cc !important; }
 
-body[data-theme="night"] [data-nmb-gray] { background: #171717 !important; color: #a126d4; }
+body[data-theme="night"] [data-nmb-gray] { background: #171717 !important; color: #c5b7cc; }
 
 body[data-theme="night"] [data-nmb-white] { background: white !important; color: black !important; }
 
@@ -3404,7 +3404,7 @@ body[data-theme="night"] .service__details-step-title::before, body[data-theme="
 
 body[data-theme="night"] .service__details-step-title { background: #000000 !important; }
 
-body[data-theme="night"] .service__details-step-info { border: solid 1px #2f2f2f !important; }
+body[data-theme="night"] .service__details-step-info { border: solid 1px #2f2f2f !important; background: white; }
 
 body[data-theme="night"] .filters-module__sidebar-link { color: white !important; }
 
@@ -3942,7 +3942,7 @@ body[data-theme="night"] .global__career-module .global__career-module-title { b
 
 .services__details-wrapper .service__item-wrapper .service__details-info-steps .service__details-step-group .service__details-step-item .service__details-step-info .service__details-step-info-icon.down::after { top: 25px; bottom: auto; border-top: none; border-bottom: solid 15px black; }
 
-.services__details-wrapper .service__item-wrapper .service__details-info-steps .service__details-step-group .service__details-step-item .service__details-step-info .service__details-step-info-label, .services__details-wrapper .service__item-wrapper .service__details-info-steps .service__details-step-group .service__details-step-item .service__details-step-info .service__details-step-info-title, .services__details-wrapper .service__item-wrapper .service__details-info-steps .service__details-step-group .service__details-step-item .service__details-step-info .service__details-step-info-subtitle { display: block; font-size: 17px; font-weight: regular; }
+.services__details-wrapper .service__item-wrapper .service__details-info-steps .service__details-step-group .service__details-step-item .service__details-step-info .service__details-step-info-label, .services__details-wrapper .service__item-wrapper .service__details-info-steps .service__details-step-group .service__details-step-item .service__details-step-info .service__details-step-info-title, .services__details-wrapper .service__item-wrapper .service__details-info-steps .service__details-step-group .service__details-step-item .service__details-step-info .service__details-step-info-subtitle { display: block; font-size: 17px; font-weight: regular; color: black }
 
 .services__details-wrapper .service__item-wrapper .service__details-info-steps .service__details-step-group .service__details-step-item .service__details-step-info .service__details-step-info-label, .services__details-wrapper .service__item-wrapper .service__details-info-steps .service__details-step-group .service__details-step-item .service__details-step-info .service__details-step-info-subtitle { font-weight: normal; font-style: italic; }
 
@@ -4611,6 +4611,8 @@ body[data-theme="night"] .global__career-module .global__career-module-title { b
 
 .team__info-options .team__info-option .team__info-option-description { display: none; color: white; text-align: center; }
 
+.team__info-options:hover {display: block!important;}
+
 .team__director-wrapper { background-image: url("img/squares-pattern.jpg"); background-position: -webkit-calc(50% + 30px) -2px; background-position: calc(50% + 30px) -2px; padding: 100px 0; overflow: hidden; -webkit-transition: all 0s ease, background 0.3s ease, color 0.3s ease, opacity 1.5s ease; -o-transition: all 0s ease, background 0.3s ease, color 0.3s ease, opacity 1.5s ease; transition: all 0s ease, background 0.3s ease, color 0.3s ease, opacity 1.5s ease; }
 
 @media (max-width: 1199.98px) { .team__director-wrapper { background-position: -webkit-calc(50% + 17px) -2px; background-position: calc(50% + 17px) -2px; } }
@@ -4743,7 +4745,7 @@ body[data-theme="night"] .global__career-module .global__career-module-title { b
 
 .team__beliefs-wrapper .team__belief-item .team__belief-item-description { position: relative; font-size: 18px; margin-bottom: 20px; }
 
-.team__beliefs-wrapper .team__belief-item .team__belief-item-description::before { content: attr(data-number); position: absolute; top: 0; left: 0; color: #f1f1f1; font-size: 115px; font-family: 'Anton', sans-serif; font-weight: regular; line-height: 1; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; -webkit-transform: translate(-70%, -10px); -ms-transform: translate(-70%, -10px); transform: translate(-70%, -10px); opacity: .1; z-index: -1; }
+.team__beliefs-wrapper .team__belief-item .team__belief-item-description::before { content: attr(data-number); position: absolute; top: 0; left: 0; color: #f1f1f1; font-size: 115px; font-family: 'Anton', sans-serif; font-weight: regular; line-height: 1; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; -webkit-transform: translate(-70%, -10px); -ms-transform: translate(-70%, -10px); transform: translate(-70%, -10px); opacity: .5; z-index: -1; }
 
 .careers__wrapper .global__career-module { height: -webkit-calc(100% - 20px); height: calc(100% - 20px); margin-bottom: 20px; text-decoration: none; }
 
