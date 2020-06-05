@@ -3220,11 +3220,11 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
 
 .animate-on-load.hidden { -webkit-transform: translateY(30px); -ms-transform: translateY(30px); transform: translateY(30px); opacity: 0; }
 
-.global__separator { width: 36px; background: black; height: 1px; margin: 20px 0 30px; -webkit-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; }
+.global__separator { width: 36px; height: 1px; margin: 20px 0 30px; -webkit-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; }
 
 .global__separator.center { margin-left: auto; margin-right: auto; }
 
-.global__separator.white { background: white; }
+.global__separator.white {  }
 
 .global__label { display: inline-block; font-size: 16px; font-style: italic; text-decoration: none; color: gray; -webkit-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
 
@@ -3338,7 +3338,7 @@ body .global__wrapper::after { content: ''; position: absolute; height: 100%; wi
 
 body[data-theme="night"] { background: #1d0033;  color: #a126d4 !important; }
 
-body[data-theme="night"] [data-nmb] {  color: #c5b7cc !important; background-image: url("./img/backtnt.jpg"); background-size: cover;}
+body[data-theme="night"] [data-nmb] {  text-shadow: 1px 1px #000 !important; background-image: url("./img/backtnt.jpg"); background-size: cover;}
 
 body[data-theme="night"] [data-nmb-lighten] { background: #030040 !important; color: #c5b7cc !important; }
 
@@ -3970,7 +3970,7 @@ body[data-theme="night"] .global__career-module .global__career-module-title { b
 
 .projects__wrapper .projects__item-wrapper .projects__item-info .projects__item-name { font-weight: regular; line-height: 1; margin-bottom: 0; }
 
-.projects__wrapper .projects__item-wrapper .projects__item-info .global__separator { background: white; margin-bottom: 20px; }
+.projects__wrapper .projects__item-wrapper .projects__item-info .global__separator { margin-bottom: 20px; }
 
 .projects__wrapper .projects__item-wrapper .projects__item-info .projects__item-type { margin-bottom: 30px; }
 
@@ -4655,11 +4655,11 @@ body[data-theme="night"] .global__career-module .global__career-module-title { b
 
 .team__director-wrapper .team__director-card .team__director-info .team__director-job { color: grey; font-size: 15px; font-style: italic; margin-bottom: 5px; }
 
-.team__director-wrapper .team__director-card .team__director-info .team__director-name { font-family: 'Anton', sans-serif; font-weight: regular; font-size: 30px; margin-bottom: 15px; }
+.team__director-wrapper .team__director-card .team__director-info .team__director-name {text-shadow: 1px 1px #fff !important; color: #a126d4;font-family: 'Anton', sans-serif; font-weight: regular; font-size: 30px; margin-bottom: 15px; }
 
-.team__director-wrapper .team__director-card .team__director-info .team__director-bio { font-size: 16px; margin-bottom: 0; }
+.team__director-wrapper .team__director-card .team__director-info .team__director-bio { text-shadow: 1px 1px #fff !important; color: #a126d4; font-size: 16px; margin-bottom: 0; }
 
-.team__list-wrapper { padding: 100px 0 50px; }
+.team__list-wrapper { }
 
 @media (max-width: 575.98px) { .team__list-wrapper { padding: 70px 0 20px; } }
 
@@ -5012,7 +5012,7 @@ body[data-theme="night"] .global__career-module .global__career-module-title { b
 
 @media (max-width: 575.98px) { .global__menu-overlay .global__menu-category .global__menu-category-list { margin-bottom: 20px; } }
 
-.global__menu-overlay .global__menu-category .global__menu-category-list .global__menu-category-section { display: inline-block; margin-bottom: 40px; font-size: 75px; color: silver; -webkit-transition: all 0s ease, background 0.3s ease, color 0.3s ease, opacity 1s ease, -webkit-transform 1s ease; transition: all 0s ease, background 0.3s ease, color 0.3s ease, opacity 1s ease, -webkit-transform 1s ease; -o-transition: all 0s ease, background 0.3s ease, color 0.3s ease, transform 1s ease, opacity 1s ease; transition: all 0s ease, background 0.3s ease, color 0.3s ease, transform 1s ease, opacity 1s ease; transition: all 0s ease, background 0.3s ease, color 0.3s ease, transform 1s ease, opacity 1s ease, -webkit-transform 1s ease; }
+.global__menu-overlay .global__menu-category .global__menu-category-list .global__menu-category-section { display: inline-block; margin-bottom: 40px; font-size: 60px; color: silver; -webkit-transition: all 0s ease, background 0.3s ease, color 0.3s ease, opacity 1s ease, -webkit-transform 1s ease; transition: all 0s ease, background 0.3s ease, color 0.3s ease, opacity 1s ease, -webkit-transform 1s ease; -o-transition: all 0s ease, background 0.3s ease, color 0.3s ease, transform 1s ease, opacity 1s ease; transition: all 0s ease, background 0.3s ease, color 0.3s ease, transform 1s ease, opacity 1s ease; transition: all 0s ease, background 0.3s ease, color 0.3s ease, transform 1s ease, opacity 1s ease, -webkit-transform 1s ease; }
 
 .global__menu-overlay .global__menu-category .global__menu-category-list .global__menu-category-section:hover, .global__menu-overlay .global__menu-category .global__menu-category-list .global__menu-category-section.current { color: black; text-decoration: none; }
 
@@ -5380,7 +5380,6 @@ footer .global__footer-find-us .global__footer-find-us-text { position: relative
     overflow-y: hidden;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    background: #dfdfdf;
 }
 .leftButton {
   background: white;
