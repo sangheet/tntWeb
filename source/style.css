@@ -3362,15 +3362,15 @@ body[data-theme="night"] .global__menu-category-section:hover, body[data-theme="
 
 body[data-theme="night"] .global__footer-contact-item-content { color: white !important; }
 
-body[data-theme="night"] .global__footer-form-input { background: transparent; color: white; border: solid 1px #2f2f2f; }
+body[data-theme="night"] .global__footer-form-input { background: transparent; color: white; border: solid 1px #8f09b1; }
 
-body[data-theme="night"] .global__footer-form-submit { background-color: #2f2f2f !important; }
+body[data-theme="night"] .global__footer-form-submit { background-color: #8f09b1!important; }
 
 body[data-theme="night"] .global__footer-contact-item { border-bottom: solid 1px #2f2f2f !important; }
 
 body[data-theme="night"] .global__footer-find-us { background: #2f2f2f; color: white; }
 
-body[data-theme="night"] .global__footer-follow-us-icon { color: #2f2f2f !important; }
+body[data-theme="night"] .global__footer-follow-us-icon { color: white !important; }
 
 body[data-theme="night"] .global__arrow-link { color: white; }
 
@@ -5186,7 +5186,7 @@ footer .global__footer-find-us .global__footer-find-us-text { position: relative
 
 .global__careers-module.hidden { opacity: 0; }
 
-.global__career-module { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; height: 100%; padding: 30px; color: black; text-decoration: none; border: solid 1px black; -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
+.global__career-module { overflow: hidden; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; height: 100%; padding: 30px; color: black; text-decoration: none; border: solid 1px black; -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
 
 @media (max-width: 991.98px) { .global__career-module { height: auto; margin-bottom: 30px; } }
 
@@ -5200,7 +5200,7 @@ footer .global__footer-find-us .global__footer-find-us-text { position: relative
 
 .global__career-module .global__career-module-label { margin-bottom: 15px; font-family: "Andale Mono", sans-serif; font-size: 15px; color: #847f7f; }
 
-.global__career-module .global__career-module-title { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; padding-bottom: 15px; margin-bottom: 15px; font-size: 21px; font-weight: regular; line-height: 1.2; text-transform: uppercase; border-bottom: solid 1px black; -webkit-transition: border 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); -o-transition: border 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); transition: border 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); color: #847f7f;}
+.global__career-module .global__career-module-title { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; padding-bottom: 15px; margin-bottom: 15px; font-size: 21px; font-weight: regular; line-height: 1.2; text-transform: uppercase; border-bottom: solid 1px black; -webkit-transition: border 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); -o-transition: border 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); transition: border 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); color: #8f09b1;}
 
 @media (max-width: 1199.98px) { .global__career-module .global__career-module-title { font-size: 18px; } }
 
@@ -5411,7 +5411,17 @@ footer .global__footer-find-us .global__footer-find-us-text { position: relative
     border-radius: 5px;
     color: black;
     font-size: x-large;
-    font-weight: 500;
-  
-    
+    font-weight: 500;   
+}
+.grow {
+  height: 170px;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  overflow: hidden;
+}
+.grow:hover {
+  height: 400px;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  z-index: 1000;
 }
