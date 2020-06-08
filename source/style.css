@@ -5089,7 +5089,7 @@ footer .global__footer-find-us .global__footer-find-us-text { position: relative
 
 .global__loader-wrapper .global__loader-overlay { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
 
-.global__loader-wrapper .global__loader-overlay.black { background: #252525; }
+.global__loader-wrapper .global__loader-overlay.black { background: #5e1b83; }
 
 .global__loader-wrapper .global__loader-overlay.black .global__loader-info { position: absolute; bottom: 50px; right: 100px; font-size: 150px; font-family: 'Anton'; font-weight: regular; color: #e0e0e0; z-index: 10; }
 
@@ -5382,8 +5382,8 @@ footer .global__footer-find-us .global__footer-find-us-text { position: relative
     -webkit-overflow-scrolling: touch;
 }
 .leftButton {
-  background: white;
-  border: 2px solid black;
+  
+  border: none;
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -5391,26 +5391,28 @@ footer .global__footer-find-us .global__footer-find-us-text { position: relative
     position: relative;
     left: -80px;
     top: 350px;
-    border-radius: 5px;
-    color: black;
-    font-size: x-large;
-    font-weight: 500;
-    
+    background-image: url("./img/left.png");
+    background-size: cover;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .rightButton {
-  background: white;
-    border: 2px solid black;
+  
+    border: none;
     width: 50px;
     height: 50px;
+    padding: 5px;
     display: inline-block;
     float: right;
     position: relative;
     right: -110px;
     top: 350px;
-    border-radius: 5px;
-    color: black;
-    font-size: x-large;
-    font-weight: 500;   
+    background-image: url("./img/right.png");
+    background-size: cover;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .grow {
   height: 170px;
