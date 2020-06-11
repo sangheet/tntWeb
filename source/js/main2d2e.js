@@ -14,7 +14,7 @@ $(() => {
   menuTrigger = $(".global__menu-overlay-trigger");
 
   // Loader
-  loaderCount(86, true);
+  loaderCount(20, true);
 
   barba.hooks.before((data) => {
     headerWrapper.addClass("is-visible");
@@ -334,8 +334,7 @@ $(() => {
       currentHour = new Date().getHours();
 
   if (currentHour < 8 || currentHour > 19) {
-    $("body").attr("data-theme", "night");
-    $(".global__header-night-mode input[type='checkbox']").prop('checked', true);
+    $("body").attr("data-theme", "light");    $(".global__header-night-mode input[type='checkbox']").prop('checked', true);
   }
 
 
