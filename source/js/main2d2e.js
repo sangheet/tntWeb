@@ -68,7 +68,7 @@ $(() => {
         }
       },
       {
-        namespace: 'expertise',
+        namespace: 'expertises',
         beforeLeave(data) {
           const done = this.async();
 
@@ -87,7 +87,7 @@ $(() => {
         }
       },
       {
-        namespace: 'proyectos',
+        namespace: 'proyectoss',
         beforeLeave(data) {
           const done = this.async();
 
@@ -106,7 +106,7 @@ $(() => {
         }
       },
       {
-        namespace: 'data-insights',
+        namespace: 'data-insightss',
         beforeLeave(data) {
           const done = this.async();
 
@@ -125,7 +125,7 @@ $(() => {
         }
       },
       {
-        namespace: 'conocimiento',
+        namespace: 'conocimientoss',
         beforeLeave(data) {
           const done = this.async();
 
@@ -153,7 +153,7 @@ $(() => {
         }
       },
       {
-        namespace: 'blog',
+        namespace: 'blogs',
         beforeLeave(data) {
           const done = this.async();
 
@@ -172,7 +172,7 @@ $(() => {
         }
       },
       {
-        namespace: 'post',
+        namespace: 'posts',
         beforeLeave(data) {
           const done = this.async();
 
@@ -191,7 +191,7 @@ $(() => {
         }
       },
       {
-        namespace: 'eventos',
+        namespace: 'eventoss',
         beforeLeave(data) {
           const done = this.async();
 
@@ -229,7 +229,7 @@ $(() => {
         }
       },
       {
-        namespace: 'equipo',
+        namespace: 'equipos',
         beforeLeave(data) {
           const done = this.async();
 
@@ -248,7 +248,7 @@ $(() => {
         }
       },
       {
-        namespace: 'carreras',
+        namespace: 'carrerass',
         beforeLeave(data) {
           const done = this.async();
 
