@@ -34,9 +34,11 @@ $(() => {
     currentNamespace = data.next.namespace;
 
     if(data.next.namespace == "inicio" || data.next.namespace == "blog" || data.next.namespace == "eventos" || data.next.namespace == "contacto") {
-      headerWrapper.addClass("text-white");
+      //headerWrapper.addClass("text-white");
+      console.log("A");
     } else {
-      headerWrapper.removeClass("text-white");
+      //headerWrapper.removeClass("text-white");
+      console.log("A");
     }
   });
 
