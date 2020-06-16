@@ -5374,7 +5374,7 @@ footer .global__footer-find-us .global__footer-find-us-text { position: relative
 .rowA {
   height: 95vh;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: hidden;
     display: inline-flex;
     margin-left: 0px;
     overflow-y: hidden;
