@@ -82,7 +82,7 @@ $(() => {
           if(!firstVisit) {
             expertiseFunctions(0, 500);
           } else {
-            firstVisit = false;
+            firstVisit = true;
           }
         }
       },
