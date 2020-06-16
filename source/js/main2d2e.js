@@ -788,22 +788,7 @@ function Cf7Init() {
 
 
 //Footer
-function footer(reverse) {
-  if (reverse) {
-    animateSplitWords($("footer .global__word-wrapper"), reverse);
-    animateElements($("footer .animate-on-load"), reverse);
-  } else {
-    $('footer').waypoint({
-      handler: function(direction) {
-        animateSplitWords($("footer .global__word-wrapper"), reverse);
-        animateElements($("footer .animate-on-load"), reverse);
-  
-        this.destroy();
-      },
-      offset: offsetWaypoints(reverse)
-    });
-  }
-}
+
 
 
 //Remove accents
