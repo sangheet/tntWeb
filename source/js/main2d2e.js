@@ -72,7 +72,7 @@ $(() => {
         beforeLeave(data) {
           const done = this.async();
 
-          expertiseFunctions(0, 0, true, true);
+         // expertiseFunctions(0, 0, true, true);
 
           setTimeout(() => {
             done();
@@ -80,7 +80,7 @@ $(() => {
         },
         afterEnter(data) {
           if(!firstVisit) {
-            expertiseFunctions(0, 500);
+           // expertiseFunctions(0, 500);
           } else {
             firstVisit = true;
           }
@@ -352,7 +352,7 @@ $(() => {
   
 
 
-  //Scroll animation
+ /*  //Scroll animation
   $("a.scroll-target").click((e) => {
     var target = $(e.currentTarget).attr("href");
     
@@ -361,18 +361,18 @@ $(() => {
     $('html,body').animate({
       scrollTop: $(target).offset().top
     }, 2000, "easeInOutQuart");
-  });
+  }); */
 
 
 
   //No-barba link
-  $(".no-barba").click((e) => {
+ /*  $(".no-barba").click((e) => {
     var url = $(e.currentTarget).attr("href");
 
-    window.location.href = url;
+    //window.location.href = url;
 
     return false;
-  });
+  }); */
 
 
 
@@ -831,14 +831,14 @@ function simplifyText(str) {
 
 
 // Search url parameter
-$.urlParam = function (name) {
+/* $.urlParam = function (name) {
   var results = new RegExp('[\?&]' + name + '=([^&#]*)')
                     .exec(window.location.href);
   if (results == null) {
        return 0;
   }
   return results[1] || 0;
-}
+} */
 // Global variables
 var foresightBlinks;
 
@@ -1139,7 +1139,7 @@ function expertiseFunctions(delayOnLoad, delayElements, reverse, skip) {
     articles("blog", reverse);
 
     //Footer
-    footer(reverse);
+   // footer(reverse);
   }, delayOnLoad);
 }
 
@@ -1520,18 +1520,18 @@ function knowledgeGlobal(reverse) {
 
 
 
-  $(".knowledge__item-detail-option.download").click((e) => {
+  /* $(".knowledge__item-detail-option.download").click((e) => {
     var url = $(e.currentTarget).attr("href");
 
     window.location.href = url;
 
     return false;
-  });
+  }); */
 
 
 
 
-  document.addEventListener( 'wpcf7mailsent', function( event ) {
+ /*  document.addEventListener( 'wpcf7mailsent', function( event ) {
     if (downloadFormID == event.detail.contactFormId) {
       if (bookType != "Webinars") {
         window.location.href = bookUrl;
@@ -1543,7 +1543,7 @@ function knowledgeGlobal(reverse) {
         $(".wpcf7-response-output").fadeToggle(1000);
       }, 5000);
     }
-  }, false );
+  }, false ); */
 }
 
 
@@ -2489,7 +2489,7 @@ $(window).load(function() {
   //Fix for images url
   $(".global__popup-services-wrapper form img").each(function() {
     var url = $(this).attr("src"),
-        url = window.location.href + "wp-content/themes/4srealestate/" + url;
+        url = window.location.href + "source/img" + url;
 
     $(this).attr("src", url);
   });
