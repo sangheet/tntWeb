@@ -43,7 +43,7 @@ $(() => {
   });
 
   //Page transitions
-  barba.init({
+  /* barba.init({
     views: [
       {
         namespace: 'inicio',
@@ -72,7 +72,7 @@ $(() => {
         beforeLeave(data) {
           const done = this.async();
 
-         // expertiseFunctions(0, 0, true, true);
+          expertiseFunctions(0, 0, true, true);
 
           setTimeout(() => {
             done();
@@ -80,7 +80,7 @@ $(() => {
         },
         afterEnter(data) {
           if(!firstVisit) {
-           // expertiseFunctions(0, 500);
+            expertiseFunctions(0, 500);
           } else {
             firstVisit = true;
           }
@@ -325,7 +325,7 @@ $(() => {
       }
     ]
   });
-
+ */
 
 
 
@@ -1139,7 +1139,7 @@ function expertiseFunctions(delayOnLoad, delayElements, reverse, skip) {
     articles("blog", reverse);
 
     //Footer
-   // footer(reverse);
+    footer(reverse);
   }, delayOnLoad);
 }
 
@@ -1471,7 +1471,7 @@ function knowledgeGlobal(reverse) {
     bookType = $(el).data("book-type");
 
     // Update book details
-    $(".knowledge__header-title, .knowledge__item-detail-title").text(bookTitle);
+    /* $(".knowledge__header-title, .knowledge__item-detail-title").text(bookTitle);
     $(".knowledge__item-download-name").val(bookTitle);
     $(".knowledge__header-type").text(bookType);
     $(".knowledge__item-download-type").val(bookType);
@@ -1480,7 +1480,7 @@ function knowledgeGlobal(reverse) {
     $(".knowledge__item-download-link").attr("href", bookUrl);
     $(".knowledge__item-detail-option.replay").attr("href", bookReplay);
     $(".knowledge__item-detail-option.download").attr("href", bookUrl);
-    $(".knowledge__item-detail-spotify").attr("href", spotifyUrl);
+    $(".knowledge__item-detail-spotify").attr("href", spotifyUrl); */
 
     if (bookExternal == "si") {
       $(".knowledge__item-download").hide();
@@ -2485,7 +2485,7 @@ $(".global__popup-services-wrapper").click(function(e){
 });
 
 
-$(window).load(function() {
+/* $(window).load(function() {
   //Fix for images url
   $(".global__popup-services-wrapper form img").each(function() {
     var url = $(this).attr("src"),
@@ -2498,7 +2498,7 @@ $(window).load(function() {
   $(".global__popup-services-overlay select").selectric({
     maxHeight: 140
   });
-});
+}); */
 
 
 $(".global__popup-services-form-option label").click(function() {
