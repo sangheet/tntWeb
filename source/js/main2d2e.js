@@ -528,7 +528,7 @@ function loader() {
 // Animate header/menu on load
 function headerMenu() {
   if(scroll < headerWrapper.innerHeight()) {
-    headerWrapper.addClass("is-visible");
+    headerWrapper.addClass("is-visible2");
   }
 
   setTimeout(() => {
