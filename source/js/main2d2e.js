@@ -528,7 +528,7 @@ function loader() {
 // Animate header/menu on load
 function headerMenu() {
   if(scroll < headerWrapper.innerHeight()) {
-    headerWrapper.addClass("is-visible2");
+    headerWrapper.addClass("is-visible");
   }
 
   setTimeout(() => {
@@ -548,9 +548,9 @@ function headerScroll() {
   scroll = $(window).scrollTop();
 
   if(scroll > headerWrapper.innerHeight()) {
-    headerWrapper.addClass("fixed").removeClass("is-visible transition");
+    headerWrapper.addClass("").removeClass("is-visible transition");
   } else {
-    headerWrapper.removeClass("fixed").addClass("transition");
+    headerWrapper.removeClass("").addClass("transition");
   }
 
   if(scroll > lastScroll) {
